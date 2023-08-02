@@ -1,5 +1,7 @@
 @use 'variaveis';
 @use 'hero';
+    @use 'components/infobar';
+    @use 'components/buttons';
 
 * {
     margin: 0;
@@ -7,6 +9,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     color: variaveis.$corTextoPrincipal;
+    list-style: none;
 }
 
 .container {

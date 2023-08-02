@@ -1,0 +1,43 @@
+@use '../variaveis';
+
+.info-bar {
+    background-color: variaveis.$corTextoPrincipal;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &__list {
+        display: flex;
+        gap: 40px;
+
+        &__item {
+            font-size: 14px;
+            color: variaveis.$corTextoContraste;
+
+            b {
+                display: block;
+                font-size: 18px;
+                color: variaveis.$corTextoContraste;
+            }
+        }
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+
+        &__list {
+            display: block;
+
+            &__item {
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        &__list {
+            gap: 16px;
+        }
+    }
+}
