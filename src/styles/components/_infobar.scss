@@ -1,7 +1,7 @@
-@use '../variaveis';
+@use '../variables';
 
 .info-bar {
-    background-color: variaveis.$corTextoPrincipal;
+    background-color: variables.$textColor;
     padding: 16px 24px;
     display: flex;
     justify-content: space-between;
@@ -13,12 +13,12 @@
 
         &__item {
             font-size: 14px;
-            color: variaveis.$corTextoContraste;
+            color: variables.$textContrast;
 
             b {
                 display: block;
                 font-size: 18px;
-                color: variaveis.$corTextoContraste;
+                color: variables.$textContrast;
             }
         }
     }

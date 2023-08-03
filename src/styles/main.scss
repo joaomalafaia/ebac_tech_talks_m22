@@ -1,14 +1,15 @@
-@use 'variaveis';
+@use 'variables';
 @use 'hero';
     @use 'components/infobar';
     @use 'components/buttons';
+@use 'event';
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    color: variaveis.$corTextoPrincipal;
+    color: variables.$textColor;
     list-style: none;
 }
 
@@ -24,4 +25,23 @@
     @media (min-width: 641px) and (max-width: 1024px) {
         max-width: 90%;
     }
+}
+
+@mixin body-text() {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+@mixin body-title() {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.body-text {
+    @include body-text();
+}
+
+.body-title {
+    @include body-title();
 }
